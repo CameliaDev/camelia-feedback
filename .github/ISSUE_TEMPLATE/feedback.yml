@@ -1,0 +1,26 @@
+name: Camelia feedback
+description: Bug report or feature idea for Camelia desktop
+title: "[feedback] "
+labels: ["feedback"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - Bug
+        - Feature idea
+        - UX / copy
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened / what you want
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: OS / Camelia build (if known)
